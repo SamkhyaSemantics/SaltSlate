@@ -1,3 +1,10 @@
+!pip install virtualenv
+!virtualenv venv
+!source venv/bin/activate
+!pip install -U pip wheel setuptools
+
+!pip install concrete-ml
+
 from sklearn.datasets import make_classification
 from sklearn.model_selection import train_test_split
 from concrete.ml.sklearn import LogisticRegression
